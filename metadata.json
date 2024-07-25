@@ -56,9 +56,8 @@
       "@type": "cr:FileObject",
       "@id": "repo",
       "name": "repo",
-      "contentUrl": "https://github.com/openai/gpt-3",
-      "encodingFormat": "git+https",
-      "sha256": "https://github.com/mlcommons/croissant/issues/80"
+      "contentUrl": "https://embodied-planning.github.io/data_samples/",
+      "encodingFormat": "https"
     },
     {
       "@type": "cr:FileSet",
@@ -76,53 +75,65 @@
       "@type": "cr:RecordSet",
       "@id": "default",
       "name": "default",
-      "description": "Contexts and completions.",
+      "description": "Multimodal samples for embodied planning.",
       "field": [
         {
           "@type": "cr:Field",
-          "@id": "default/context",
-          "name": "context",
-          "description": "The context in the promt.",
+          "@id": "default/instruction",
+          "name": "instruction",
+          "description": "Natural language user instructions.",
           "dataType": "sc:Text",
           "source": {
             "fileSet": {
               "@id": "jsonl"
             },
             "extract": {
-              "column": "context"
+              "column": "instruction"
             }
           }
         },
         {
           "@type": "cr:Field",
-          "@id": "default/completion",
-          "name": "completion",
-          "description": "The expected completion of the promt.",
-          "dataType": "sc:Text",
+          "@id": "default/image",
+          "name": "image",
+          "description": "Visual images depicting the environment.",
+          "dataType": "sc:ImageObject",
           "source": {
             "fileSet": {
               "@id": "jsonl"
             },
             "extract": {
-              "column": "completion"
+              "column": "image"
             }
           }
         },
         {
           "@type": "cr:Field",
-          "@id": "default/task",
-          "name": "task",
-          "description": "The machine learning task appearing as the name of the file.",
+          "@id": "default/state_changes",
+          "name": "state_changes",
+          "description": "State changes in the environment.",
           "dataType": "sc:Text",
           "source": {
             "fileSet": {
               "@id": "jsonl"
             },
             "extract": {
-              "fileProperty": "filename"
+              "column": "state_changes"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/action_plan",
+          "name": "action_plan",
+          "description": "Corresponding action plans.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl"
             },
-            "transform": {
-              "regex": "^(.*)\\.jsonl$"
+            "extract": {
+              "column": "action_plan"
             }
           }
         }
