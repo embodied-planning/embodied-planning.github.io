@@ -1,80 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="description"
-        content="Can-Do! A Dataset for Embodied Planning with Large Multimodal Models">
-  <meta name="keywords" content="Can-Do, Agent, Embodied, Dataset, Planning, Multimodal">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Can-Do! A Dataset for Embodied Planning with Large Multimodal Models</title>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="Can-Do! A Dataset for Embodied Planning with Large Multimodal Models">
+    <meta name="keywords" content="Can-Do, Agent, Embodied, Dataset, Planning, Multimodal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Can-Do! A Dataset for Embodied Planning with Large Multimodal Models</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+        function gtag() {
+          dataLayer.push(arguments);
+        }
 
-    gtag('js', new Date());
+        gtag('js', new Date());
 
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-  <!-- <link rel="icon" href="./static/images/favicon-32x32.png"> -->
-  <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <!-- <link rel="icon" href="./static/images/favicon-32x32.png"> -->
+    <link rel="icon" href="logo.png">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
 
-  <script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/4.19.2/gradio.js"
-  ></script>
+    <script
+            type="module"
+            src="https://gradio.s3-us-west-2.amazonaws.com/4.19.2/gradio.js"
+    ></script>
 
-  
 
 </head>
 <body>
 
 <section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title" style="font-size: 32px;">
-            <img src="logo.png" alt="" style="height: 2.5em;">
-            <br>
-            Can-Do! A Dataset for Embodied Planning with Large Multimodal Models
-          </h1>
-          <div class="column has-text-centered">
-            <div class="publication-links">
-<!--              &lt;!&ndash; Leaderboard Link. &ndash;&gt;-->
-<!--              <span class="link-block">-->
-<!--                <a href=""-->
-<!--                   class="external-link button is-normal is-rounded is-dark">-->
-<!--                  <span class="icon">-->
-<!--                      🤗-->
-<!--                  </span>-->
-<!--                  <span>Leaderboard</span>-->
-<!--                </a>-->
-<!--              </span>-->
-              <!-- PDF Link. -->
-              <span class="link-block">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title" style="font-size: 32px;">
+                        <img src="logo.png" alt="" style="height: 2.5em;">
+                        <br>
+                        Can-Do! A Dataset and Neuro-Symbolic Grounded Framework for Embodied Planning with Large
+                        Multimodal Models
+                    </h1>
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!--              &lt;!&ndash; Leaderboard Link. &ndash;&gt;-->
+                            <!--              <span class="link-block">-->
+                            <!--                <a href=""-->
+                            <!--                   class="external-link button is-normal is-rounded is-dark">-->
+                            <!--                  <span class="icon">-->
+                            <!--                      🤗-->
+                            <!--                  </span>-->
+                            <!--                  <span>Leaderboard</span>-->
+                            <!--                </a>-->
+                            <!--              </span>-->
+                            <!-- PDF Link. -->
+                            <span class="link-block">
                 <a href="https://arxiv.org/abs/2409.14277"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -83,18 +83,18 @@
                   <span>Paper</span>
                 </a>
               </span>
-<!--              &lt;!&ndash; Blog Link. &ndash;&gt;-->
-<!--              <span class="link-block">-->
-<!--                <a href=""-->
-<!--                   class="external-link button is-normal is-rounded is-dark">-->
-<!--                  <span class="icon">-->
-<!--                      <i class="fas fa-file-pdf"></i>-->
-<!--                  </span>-->
-<!--                  <span>Blog</span>-->
-<!--                </a>-->
-<!--              </span>-->
-              <!-- Code Link. -->
-              <span class="link-block">
+                            <!--              &lt;!&ndash; Blog Link. &ndash;&gt;-->
+                            <!--              <span class="link-block">-->
+                            <!--                <a href=""-->
+                            <!--                   class="external-link button is-normal is-rounded is-dark">-->
+                            <!--                  <span class="icon">-->
+                            <!--                      <i class="fas fa-file-pdf"></i>-->
+                            <!--                  </span>-->
+                            <!--                  <span>Blog</span>-->
+                            <!--                </a>-->
+                            <!--              </span>-->
+                            <!-- Code Link. -->
+                            <span class="link-block">
                 <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -103,8 +103,8 @@
                   <span>Code (Coming Soon)</span>
                   </a>
               </span>
-              <!-- darasets Link. -->
-              <span class="link-block">
+                            <!-- darasets Link. -->
+                            <span class="link-block">
                 <a href="https://embodied-planning.github.io/data_samples/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -113,54 +113,74 @@
                   <span>Data Samples</span>
                   </a>
                 </span>
-            </div>
+                        </div>
 
-          </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
 
-
 <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img id="overview" src="data_overview.png" alt="Overview" height="100%">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <img id="overview" src="assets/data_overview.png" alt="Overview" height="100%">
+        </div>
+        <div class="content has-text-justified">
+            <p>
+                Large multimodal models have demonstrated impressive problem-solving abilities in vision and language
+                tasks, and have the potential to encode extensive world knowledge. However, it remains an open challenge
+                for these models to perceive, reason, plan, and act in realistic environments. In this work, we
+                introduce Can-Do, a benchmark dataset designed to evaluate embodied planning abilities through more
+                diverse and complex scenarios than previous datasets. Our dataset includes 400 multimodal samples, each
+                consisting of natural language user instructions, visual images depicting the environment, state
+                changes, and corresponding action plans. The data encompasses diverse aspects of commonsense knowledge,
+                physical understanding, and safety awareness. Our fine-grained analysis reveals that state-of-the-art
+                models, including GPT-4V, face bottlenecks in visual perception, comprehension, and reasoning abilities.
+                To address these challenges, we propose NeuroGround, a neuro-symbolic framework that first grounds the
+                plan generation in the perceived environment states and then leverages symbolic planning engines to
+                augment the model-generated plans. Experimental results demonstrate the effectiveness of our framework
+                compared to strong baselines.
+            </p>
+        </div>
+        <div class="hero-body">
+            <img id="stats" src="assets/data_stats.png" alt="Data Statistics" height="100%">
+        </div>
+        <div class="content has-text-justified">
+            <p>
+                Based on our preliminary study, which diagnosed significant planning bottlenecks in visual
+                perception, goal comprehension, and reasoning for plan generation, we propose NeuroGround, a
+                neuro-symbolic framework for grounded embodied planning. To enhance the visual perception and
+                comprehension ability of the model, we leverage state-grounded planning which explicitly guides the
+                model to generate and condition on the environment states before starting to generate the plan. To
+                mitigate the plan generation limitations of the model, we augment it with a symbolic engine, inspired by
+                neuro-symbolic approaches. In this way, our framework is able to enhance the planning ability of large
+                multimodal models.
+            </p>
+        </div>
+        <div class="hero-body">
+            <img id="framework" src="assets/planning_framework.png" alt="Planning Framework" height="100%">
+        </div>
     </div>
-    <div class="content has-text-justified">
-      <p>
-        Large multimodal models have demonstrated impressive problem-solving abilities in vision and language tasks, and they
-        have the potential to encode extensive world knowledge. However, it remains an open challenge for these models to
-        perceive, reason, plan, and act in realistic environments. In this work, we introduce Can-Do, a benchmark dataset
-        designed to evaluate embodied planning abilities through more diverse and complex scenarios than previous datasets. Our
-        dataset includes 315 multimodal samples, each consisting of natural language user instructions, visual images depicting
-        the environment, state changes, and corresponding action plans. The data encompasses diverse aspects of commonsense
-        knowledge, physical understanding, and safety awareness. Our fine-grained analysis reveals that state-of-the-art models,
-        including GPT-4V, face bottlenecks in visual perception, comprehension, and reasoning abilities.
-      </p>
-    </div>
-    <div class="hero-body">
-      <img id="stats" src="data_stats.png" alt="Data Statistics" height="100%">
-    </div>
-  </div>
 </section>
 
 
 <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            CC BY-SA 4.0 License</a>.
-          </p>
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>,
+                        licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                        CC BY-SA 4.0 License</a>.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </footer>
 
 </body>
